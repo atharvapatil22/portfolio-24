@@ -1,0 +1,18 @@
+.wrapper {
+  margin: 6em;
+}
+
+.section_heading {
+  color: black;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.5em;
+}
+
+.section_divider {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: grey;
+  /* height: 1px; */
+}

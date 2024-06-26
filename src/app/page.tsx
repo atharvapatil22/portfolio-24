@@ -1,5 +1,7 @@
 import GradientBackground from "./components/gradient-bg";
 import ProjectsList from "./components/projects-list";
+import Toolbox from "./components/toolbox";
+import styles from "./home.module.css";
 
 const PROJ_DATA = [
   {
@@ -29,7 +31,11 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between pt-0 bg-gray-300">
       <GradientBackground
         children={
-          <div>
+          <div className={styles.wrapper}>
+            <h1 className={styles.section_heading}>MY TOOLBOX</h1>
+            <Toolbox />
+            <div className={styles.section_divider} />
+            <h1 className={styles.section_heading}>PROJECTS</h1>
             {PROJ_DATA.map((proj, index) => (
               <ProjectsList
                 key={index}
@@ -39,11 +45,10 @@ export default function Home() {
                 desc={proj.desc}
               />
             ))}
+            <div className={styles.section_divider} />
           </div>
         }
       />
-
-      {/* <div className="temp"></div> */}
     </main>
   );
 }

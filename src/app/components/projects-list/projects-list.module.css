@@ -4,11 +4,24 @@
   /* border: 1px solid black; */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-family: "Geometric Sans Serif v1", sans-serif;
 }
 
 .project_info h2 {
   /* color: ; */
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 700;
+  color: white;
+}
+
+.project_info p {
+  color: white;
+}
+
+.project_info {
+  width: 49%;
+}
+.card_wrapper {
+  width: 49%;
 }
