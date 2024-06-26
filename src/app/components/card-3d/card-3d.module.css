@@ -1,0 +1,16 @@
+.card_wrapper {
+  perspective: 800px;
+  /* background-color: yellow; */
+  /* border: 1px solid blue; */
+}
+.card {
+  background-color: white;
+  height: 350px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: rotateX(var(--xRotation)) rotateY(var(--yRotation));
+  /* scale(1.02); */
+}

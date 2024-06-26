@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  margin-top: 80px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  font-family: "Geometric Sans Serif v1", sans-serif;
+}
+
+.project_info h2 {
+  /* color: ; */
+  font-size: 2rem;
+  font-weight: 700;
+}
