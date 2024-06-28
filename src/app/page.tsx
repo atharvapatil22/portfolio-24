@@ -1,12 +1,13 @@
 import GradientBackground from "./components/gradient-bg";
 import ProjectsList from "./components/projects-list";
+import Testimonials from "./components/testimonials";
 import Toolbox from "./components/toolbox";
 import styles from "./home.module.css";
 
 const PROJ_DATA = [
   {
     title: "PokerAI",
-    desc: "Made a poker playing AI agent using monte carlo algo. Also alpha beta pruning minimax agent. You can play a 1v1 game against it",
+    desc: "Made a poker playing AI agent using Monte Carlo Agent. We tested it against baselines agents of Alpha-Beta and Random Call agents. You can play a 1v1 game against it.",
     keyWords: ["AI", "Monte Carlo"],
   },
   {
@@ -34,7 +35,6 @@ export default function Home() {
           <div className={styles.wrapper}>
             <h1 className={styles.section_heading}>MY TOOLBOX</h1>
             <Toolbox />
-            <div className={styles.section_divider} />
             <h1 className={styles.section_heading}>PROJECTS</h1>
             {PROJ_DATA.map((proj, index) => (
               <ProjectsList
@@ -45,7 +45,8 @@ export default function Home() {
                 desc={proj.desc}
               />
             ))}
-            <div className={styles.section_divider} />
+            <h1 className={styles.section_heading}>TESTIMONIALS</h1>
+            <Testimonials />
           </div>
         }
       />
